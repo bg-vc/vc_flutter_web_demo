@@ -63,8 +63,7 @@ class _HomePageState extends State<HomePage> {
                     ? const Center(
                   child: CircularProgressIndicator(),
                 )
-                    : NotificationListener<
-                    OverscrollIndicatorNotification>(
+                    : NotificationListener<OverscrollIndicatorNotification>(
                     onNotification: (overScroll) {
                       overScroll.disallowGlow();
                       return true;
